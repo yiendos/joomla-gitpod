@@ -1,0 +1,13 @@
+{
+   "folders": [
+      {
+         "path": "file:///workspace/joomla-gitpod"
+      },
+      {
+         "path": "file:///var/www/joomla"
+      }
+   ],
+   "settings": {
+          "explorer.autoReveal": true
+      }
+}
