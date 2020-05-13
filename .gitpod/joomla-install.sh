@@ -8,4 +8,4 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 
 echo "* Create a new Joomla site"
 
-joomla site:create joomla --disable-ssl 
+#joomla site:create joomla --disable-ssl
