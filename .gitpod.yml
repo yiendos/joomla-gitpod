@@ -16,7 +16,7 @@ tasks:
   - name: Terminal
     command: |
       clear
-      /workspace/joomlatools-pages/.gitpod/bootstrap.sh
+      /workspace/joomla-gitpod/.gitpod/bootstrap.sh
       gp preview $(gp url 8080)
       echo ""
       echo "Commands you can try:"
