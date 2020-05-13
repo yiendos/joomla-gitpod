@@ -1,10 +1,10 @@
 {
    "folders": [
       {
-         "path": "file:///workspace/joomlatools-pages"
+         "path": "file:///workspace/joomla-gitpod"
       },
       {
-         "path": "file:///var/www/preview/joomlatools-pages"
+         "path": "file:///var/www/joomlas"
       }
    ],
    "settings": {
