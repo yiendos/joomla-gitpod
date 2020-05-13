@@ -12,5 +12,7 @@ joomla site:create joomla --disable-ssl --mysql-login=root:
 
 apachectl restart
 
+ln  -s /var/www/joomla /wokspace/joomla-gitpod/joomla
+
 echo "* Launch preview pane"
 gp preview $(gp url 8080)
