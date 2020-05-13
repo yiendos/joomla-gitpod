@@ -10,5 +10,7 @@ echo "* Create a new Joomla site"
 
 joomla site:create joomla --disable-ssl --mysql-login=root:
 
+apachectl restart
+
 echo "* Launch preview pane"
 gp preview $(gp url 8080)
