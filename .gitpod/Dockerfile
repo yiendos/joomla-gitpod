@@ -34,7 +34,7 @@ RUN composer global require joomlatools/console --no-interaction
 RUN echo 'export PATH=/home/gitpod/.composer/vendor/bin/:$PATH' >> ~/.bashrc
 
 # Install Joomla site
-COPY joomla-install.sh /home/gitpod/joomla-install.sh
+#COPY joomla-install.sh /home/gitpod/joomla-install.sh
 
-RUN /home/gitpod/joomla-install.sh
-RUN rm -f /home/gitpod/joomla-install.sh
+#RUN /home/gitpod/joomla-install.sh
+#RUN rm -f /home/gitpod/joomla-install.sh
