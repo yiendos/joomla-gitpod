@@ -8,7 +8,7 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 
 echo "* Create a new Joomla site"
 
-joomla site:create joomla --disable-ssl --mysql-login=root: /dev/null 2>&1
+joomla site:create joomla --disable-ssl --mysql-login=root:
 
 apachectl restart
 
