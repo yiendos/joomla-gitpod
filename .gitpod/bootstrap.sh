@@ -14,4 +14,11 @@ cp /workspace/joomla-gitpod/.gitpod/composer.json /workspace/joomla-gitpod/jooml
 
 #then all you need to do (if required) is composer update --working-dir=/workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}
 
+composer require joomlatools/pages --ignore-platform-reqs --working-dir=/workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}
+
+mkdir /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/pages
+
+cp /workspace/joomla-gitpod/.gitpod/config.php /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/
+cp /workspace/joomla-gitpod/.gitpod/ /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/pages
+
 apachectl start
