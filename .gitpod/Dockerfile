@@ -1,14 +1,10 @@
 FROM gitpod/workspace-mysql:latest
 
-ENV GITPOD_REPO_ROOT="/var/www/"
 ENV APACHE_DOCROOT_IN_REPO="joomla"
 ENV APACHE_RUN_USER="gitpod"
 ENV APACHE_RUN_GROUP="gitpod"
 
 USER root
-
-# Configure Apache2
-COPY apache.conf /etc/apache2/apache2.conf
 
 # Install extra PHP extensions
 RUN apt-get update \
@@ -33,5 +29,3 @@ RUN composer global require joomlatools/console --no-interaction
 
 # Make sure PATH is always updated with PATH to Composer package binaries
 RUN echo 'export PATH=/home/gitpod/.composer/vendor/bin/:$PATH' >> ~/.bashrc
-
-RUN printenv
