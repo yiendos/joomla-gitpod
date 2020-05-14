@@ -16,9 +16,7 @@ RUN apt-get update \
 # Configure MySQL's sql-mode
 RUN echo -e "\nsql-mode=\"NO_ENGINE_SUBSTITUTION\"" >> /etc/mysql/mysql.conf.d/mysqld.cnf
 
-# Note: Apache restarts and complains the folder doesn't exist
-RUN mkdir /var/www/preview \
- && chown -R gitpod:gitpod /var/www/
+RUN chown -R gitpod:gitpod /var/www/
 
 # Fix file permissions
 RUN chown -R gitpod:gitpod /var/www/
