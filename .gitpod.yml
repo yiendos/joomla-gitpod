@@ -14,7 +14,6 @@ tasks:
     command: |
       clear
       /workspace/joomla-gitpod/.gitpod/bootstrap.sh
-      gp preview $(gp url 8080)
       echo ""
       echo "Commands you can try:"
       echo " * apachectl stop"
