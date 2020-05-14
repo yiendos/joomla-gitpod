@@ -6,6 +6,9 @@ ENV APACHE_RUN_GROUP="gitpod"
 
 USER root
 
+# Configure Apache2
+COPY apache.conf /etc/apache2/apache2.conf
+
 # Install extra PHP extensions
 RUN apt-get update \
  && apt-get install php-ldap php-xml libxml2-dev build-essential php-yaml -y
