@@ -16,7 +16,7 @@ cp /workspace/joomla-gitpod/.gitpod/composer.json /workspace/joomla-gitpod/jooml
 
 composer require joomlatools/pages --ignore-platform-reqs --working-dir=/workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}
 
-mkdir /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/pages
+mkdir -p /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/pages
 
 cp /workspace/joomla-gitpod/.gitpod/config.php /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/
 cp /workspace/joomla-gitpod/.gitpod/ /workspace/joomla-gitpod/joomla.${JOOMLA_VERSION}/joomlatools-pages/pages
