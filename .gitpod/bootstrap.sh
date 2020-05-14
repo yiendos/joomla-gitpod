@@ -8,11 +8,9 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 
 echo "* Create a new Joomla site"
 
-joomla site:create joomla --disable-ssl --mysql-login=root:
+joomla site:create joomla --disable-ssl --mysql-login=root: --www=/workspace/joomla-gitpod/joomla
 
 apachectl start
-
-#ln -s /var/www/joomla /wokspace/joomla-gitpod/joomla
 
 echo "* Launch preview pane"
 gp preview $(gp url 8080)
