@@ -18,7 +18,7 @@ cp /workspace/joomla-gitpod/.gitpod/composer.json /workspace/joomla-gitpod/jooml
 
 echo "* install pages"
 
-composer require joomlatools/pages --ignore-platform-reqs --working-dir=/workspace/joomla-gitpod/joomla.${JOOMLA_VERSION} /dev/null 2>&1
+composer require joomlatools/pages --ignore-platform-reqs --working-dir=/workspace/joomla-gitpod/joomla.${JOOMLA_VERSION} > /dev/null 2>&1
 
 echo "* create pages area"
 
