@@ -10,7 +10,7 @@ echo "* Create a new Joomla site"
 
 joomla site:create joomla --disable-ssl --mysql-login=root:
 
-apachectl restart
+apachectl start
 
 #ln -s /var/www/joomla /wokspace/joomla-gitpod/joomla
 
