@@ -8,6 +8,6 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 
 echo "* Create a new Joomla site"
 
-joomla site:create joomla --disable-ssl --mysql-login=root: --www=/workspace/joomla-gitpod/
+joomla site:create joomla.${JOOMLA_VERSION} --disable-ssl --mysql-login=root: --www=/workspace/joomla-gitpod/ --release=${JOOMLA_VERSION}
 
 apachectl start
